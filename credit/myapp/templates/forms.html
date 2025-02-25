@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <h1>Fill the Form</h1>
+    <form method="post" action="{% url 'success' %}">
+        {% csrf_token %}
+        
+        <!-- Add form fields here -->
+        
+        <div class="buttons"> 
+            <a href="http://127.0.0.1:8000/" class="btn cancel">Cancel</a>
+            <button type="button" class="btn previous">Previous</button>
+            <button type="submit" class="btn submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
+
